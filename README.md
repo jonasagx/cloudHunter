@@ -1,4 +1,4 @@
-cloudHunter
+Cloud hunter
 ===========
 
-Model for cloud tracking service, I mean a real cloud -- white, flying in the sky :)
+Model for cloud tracking!
