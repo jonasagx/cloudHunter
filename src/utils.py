@@ -34,7 +34,8 @@ class Point():
         return "%d %d %d" % self.x, self.y, self.z
 
 def filtro(im_gray, mx, mi):
-    '''Para valores dentre desses limites usa-se a cor 255(Branco) e para cores fora dos limtes 0(Preto)
+    '''Para valores dentre desses limites usa-se a 
+    cor 255(Branco) e para cores fora dos limtes 0(Preto)
     '''
     im_gray.flags.writeable = True
     for i in range( len(im_gray) ):
@@ -45,7 +46,9 @@ def filtro(im_gray, mx, mi):
                 im_gray[i][j] = 255
 
 def descript( im_gray, lim ):
-    '''Descreve os objetos da imagem, no caso uma nuvem. É feita uma lista de listas para representar as nuvens, seus pontos, e suas coordenadas;
+    '''Descreve os objetos da imagem, no caso uma nuvem. 
+    É feita uma lista de listas para representar as nuvens, 
+    seus pontos, e suas coordenadas;
     '''
     im_gray.flags.writeable = True
     nuvens = []
@@ -77,6 +80,7 @@ def metadata( nuvens ):
         - Largura;
         Retorna uma lista
     '''
+    
     metadata = []
     for i in range( len(nuvens) ):
         dados = []
@@ -91,7 +95,9 @@ def metadata( nuvens ):
     return metadata
 
 def trackFill(i, j, im, stack):
-    '''Algoritmo FloodFill implementado para seguir todos os pixels com um certo padrão de cor procurado. Recebe uma estrutura chamada stack, que armazena as nuvens e os pontos de cada nuvem.
+    '''Algoritmo FloodFill implementado para seguir todos os pixels
+    com um certo padrão de cor procurado. Recebe uma estrutura 
+    chamada stack, que armazena as nuvens e os pontos de cada nuvem.
     '''
     stack.append( [i, j] )
 
