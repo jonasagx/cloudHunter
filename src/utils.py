@@ -20,10 +20,10 @@
     Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 '''
 
-import Image
-import ImageOps
+from PIL import Image
+from PIL import ImageOps
+from PIL import ImageFilter
 import numpy
-import ImageFilter
 
 class Point():
     def __init__(self, x, y, z):

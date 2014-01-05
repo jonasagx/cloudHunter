@@ -58,6 +58,7 @@ def main():
     for i in im:
         filtro( i, 90, 80 )
 
+    #Opcional
     print "Dilatando nuvens acontradas"
     for i, value in enumerate(im):
         image = Image.fromarray(im[i])
