@@ -1,0 +1,15 @@
+#include <iostream>
+#include <string>
+#include <opencv2/opencv.hpp>
+
+#define LOGGING
+
+class Photo {
+    private:
+    cv::Mat image;
+    
+    public:
+    cv::Mat loadImage(string image_filename):
+    virtual void thresholdGray(int max, int min);
+    void crop(int heigth, int widht);
+}

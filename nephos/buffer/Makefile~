@@ -1,0 +1,2 @@
+all:
+	g++ main.cpp -o main -I /usr/local/include/opencv -L /usr/local/lib -lm -lcv -lhighgui -lcvaux
